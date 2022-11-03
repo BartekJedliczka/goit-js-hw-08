@@ -1,5 +1,6 @@
 # Parcel template
 
+<<<<<<< HEAD
 Этот проект был создан при помощи Parcel. Для знакомства и настройки
 дополнительных возможностей [обратись к документации](https://parceljs.org/).
 
@@ -19,6 +20,15 @@
    файлах проекта.
 
 ## Файлы и папки
+=======
+## Zalezności
+
+Na komputerze musi być zainstalowana LTS-wersja [Node.js](https://nodejs.org/en/).
+
+## Przed rozpoczęciem pracy
+
+Jeden raz na projekt zainstalować wszystkie zalezności.
+>>>>>>> 2f10ae6ed4b7d69dd9d0e2db4551e9af6092c20b
 
 - Все паршалы файлов стилей должны лежать в папке `src/sass` и импортироваться в
   файлы стилей страниц. Например, для `index.html` файл стилей называется
@@ -28,14 +38,21 @@
   нагружать твой компьютер, так как на слабых машинах это может занять много
   времени.
 
+<<<<<<< HEAD
 ## Деплой
 
 Для настройки деплоя проекта необходимо выполнить несколько дополнительных шагов
 по настройке твоего репозитория. Зайди во вкладку `Settings` и в подсекции
 `Actions` выбери выбери пункт `General`.
+=======
+### Praca
+
+Włączyć tryp pracy.
+>>>>>>> 2f10ae6ed4b7d69dd9d0e2db4551e9af6092c20b
 
 ![GitHub actions settings](./assets/actions-config-step-1.png)
 
+<<<<<<< HEAD
 Пролистай страницу до последней секции, в которой убедись что выбраны опции как
 на следующем изображении и нажми `Save`. Без этих настроек у сборки будет
 недостаточно прав для автоматизации процесса деплоя.
@@ -97,3 +114,31 @@ Pages, в ветку `gh-pages`, каждый раз когда обновляе
 3. Если все шаги прошли успешно, собранная продакшн версия файлов проекта
    отправляется в ветку `gh-pages`. В противном случае, в логе выполнения
    скрипта будет указано в чем проблема.
+=======
+W przeglądarce przejść na [http://localhost:1234](http://localhost:1234).
+
+### Deploy
+
+Kod będzie automatycznie się zbierać i robić deploy aktualnej wersji projektu 
+na GitHub Pages, w gałąź `gh-pages`, za kazdym razem jeśli zostaną wprowadzone zmiany w `main`. Na przykład, po bezpośrenim push lub po przyjęciu pull-request. Aby to działało musimy w pliku `package.json` zmienić pole `homepage` i skrypt
+`build`, zmieniając `nazwe_uzytkownika` i `nazwe_repozytorium` na swoje.
+
+```json
+"homepage": "https://nazwa_uzytkownika.github.io/nazwa_repozytorium",
+"scripts": {
+  "build": "parcel build src/*.html --public-url /nazwa_repozytorium/"
+},
+```
+
+Po jakimś czasie stronę mozna będzie zobaczyć na zywo pod adresem który 
+jest wpisany w poprawione właściwości `homepage`, na przykład
+[https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
+
+## Pliki i folderzy
+
+- Wszystkie partials plików styłów powinny być w folderze `src/sass` i importować się w
+  `src/sass/main.scss`
+- Zdjęcia dodawajcie w folder `src/images`, przed tym zoptymizujcie te zdjęcia które dodajecie. Program po prostu 
+  kopiuje wykorzystane zdjęcia aby system nie musiał optymizować je, bo na słabych komputerach 
+  to moze zająć duzo czasu.
+>>>>>>> 2f10ae6ed4b7d69dd9d0e2db4551e9af6092c20b
